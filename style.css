@@ -1,0 +1,378 @@
+/* GALLERY PAGE STYLES */
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem; /* Add space below the header */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 6rem; /* Push content further down */
+  }
+
+
+  
+  header a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: maroon ;
+    transition: color 0.3s;
+  }
+  
+  header a:hover {
+    color: maroon ;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+/* Flip Card Section */
+.flip-card-section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Grid for Flip Cards */
+.flip-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 2rem; /* Space between cards */
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Flip Card Container */
+.flip-card {
+  width: 400px; 
+  max-width: 300px; /* Ukuran maksimum untuk menjaga proporsi */
+  height: 400px; /* Shorter height to make it rectangular */
+  perspective: 1000px; /* Perspective for the flip effect */
+  margin: 10px; /* Add spacing between cards */
+  overflow: hidden; /* Hindari elemen keluar */
+}
+
+
+.flip-card.uiux-design {
+  width: 600px; /* Wider for desktop UI/UX design display */
+  max-width: 400px; /* Ukuran maksimum untuk menjaga proporsi */
+  height: 300px; /* Shorter height to make it rectangular */
+  perspective: 1000px; /* Perspective for the flip effect */
+  margin: 10px; /* Add spacing between cards */
+  overflow: hidden; /* Hindari elemen keluar */
+
+}
+
+.flip-card.uiux-design .flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.uiux-design .flip-card-front,
+.flip-card.uiux-design .flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden; /* Pastikan tidak ada konten keluar */
+}
+
+.flip-card.uiux-design .flip-card-front img {
+  object-fit: cover; /* Buat gambar sesuai ukuran kontainer */
+  width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+  height: 100%; /* Memastikan gambar memenuhi tinggi kartu */
+  border-radius: 10px;
+}
+
+.flip-card.uiux-design .flip-card-back {
+  background-color: maroon;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.flip-card.uiux-design:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* ✅ Styling untuk section */
+.videography-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ✅ Grid untuk susunan 3 video dalam satu row */
+.videography-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 column dalam satu row */
+  gap: 40px; /* Tambah gap antara video */
+  max-width: 1400px; /* Lebarkan max-width untuk fit video landscape */
+  width: 300%;
+  padding: 20px;
+}
+
+/* ✅ Styling untuk video container */
+.video-container {
+  width: 100%;
+  max-width: 500px; /* Lebarkan max-width untuk video landscape */
+  height: 280px; /* Kurangkan height supaya tak terlalu besar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Styling untuk video */
+.project-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Responsive: 2 video per row kalau skrin lebih kecil */
+@media (max-width: 1024px) {
+  .videography-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 column satu row */
+  }
+}
+
+/* ✅ Responsive: 1 video per row kalau skrin kecil (mobile) */
+@media (max-width: 768px) {
+  .videography-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column satu row */
+  }
+}
+
+.flip-card.graphic-design {
+  width: 500px; /* Wider for desktop UI/UX design display */
+  max-width: 400px; /* Ukuran maksimum untuk menjaga proporsi */
+  height: 400px; /* Shorter height to make it rectangular */
+  perspective: 1000px; /* Perspective for the flip effect */
+  margin: px; /* Add spacing between cards */
+  overflow: hidden; /* Hindari elemen keluar */
+
+}
+
+.flip-card.graphic-design .flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.graphic-design .flip-card-front,
+.flip-card.graphic-design .flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden; /* Pastikan tidak ada konten keluar */
+}
+
+.flip-card.graphic-design .flip-card-front img {
+  object-fit: cover; /* Buat gambar sesuai ukuran kontainer */
+  width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+  height: 100%; /* Memastikan gambar memenuhi tinggi kartu */
+  border-radius: 10px;
+}
+
+.flip-card.graphic-design .flip-card-back {
+  background-color: maroon;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.flip-card.graphic-design:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* Inner Card */
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Flip effect */
+}
+
+/* Front and Back of the Card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px; /* Match rounded corners */
+}
+
+/* Front Side */
+.flip-card-front {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure images don’t overflow */
+}
+
+.flip-card-front img {
+  width: 100%; /* Ensure the image spans the full card width */
+  height: 100%; /* Ensure the image spans the full card height */
+  object-fit: cover; /* Ensures the image fills the card without distortion */
+  border-radius: 20px; /* Match card's border-radius */
+}
+
+/* Back Side */
+.flip-card-back {
+  background-color: maroon;
+  color: white;
+  transform: rotateY(180deg); /* Back starts flipped */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.flip-card-back h3 {
+  font-size: 24px;
+  color: white; /* Font color set to white */
+  margin-bottom: 10px;
+  
+}
+
+.flip-card-back p {
+  font-size: 16px;
+  color: white; /* Font color set to white */
+  line-height: 1.6;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .flip-card-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card-grid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
+
+
+/* Change font color to white */
+
+.content-container {
+  display: flex;
+  justify-content: center; /* Pastikan semua elemen berada di tengah */
+  gap: 15px; /* Kurangkan jarak antara elemen */
+  flex-wrap: wrap;
+  padding: 20px; /* Tambah sedikit padding untuk kelihatan lebih kemas */
+}
+
+.details-container {
+  flex: 1;
+  max-width: 30%; 
+  background: rgb(250, 250, 250);
+  padding: 8px; /* Kurangkan padding supaya lebih kecil */
+  border-radius: 30px; /* Kurangkan border radius */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambah sedikit shadow */
+}
+
+.project-image {
+  width: 100%;
+  max-height: 500px; 
+  border-radius: 10px;
+}
+
+.btn-container {
+  margin-top: 5px; /* Kurangkan margin */
+}
+
+.btn {
+  font-size: 14px; /* Kecilkan saiz teks button */
+  padding: 5px 10px; /* Kecilkan button */
+}
+
+@media (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container {
+    max-width: 80%;
+  }
+}
+/* ✅ Fix Fullscreen Video supaya tidak zoom/stretch */
+video:fullscreen {
+  width: auto !important; /* Pastikan lebar ikut video asal */
+  height: auto !important; /* Pastikan tinggi ikut video asal */
+  max-width: 100%; /* Jangan lebih besar dari container */
+  max-height: 100vh; /* Fit dalam skrin tanpa lebih tinggi */
+  object-fit: contain; /* Elakkan stretch atau crop */
+}
+
+/* ✅ Untuk browser yang guna -webkit- (Safari, Chrome lama) */
+video:-webkit-full-screen {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+/* ✅ Override default fullscreen background */
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.9); /* Background fullscreen gelap sikit */
+}

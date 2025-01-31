@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nur Nellisa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nur Nellisa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+     
+    </nav>
+  <header>
+    <h1>Photography</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+  <main>
+  <section class="flip-card-section">
+    <div class="flip-card-grid">
+      <!-- Card 1 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/photo3.jpg" alt="Image 1">
+            
+          </div>
+          <div class="flip-card-back">
+            <h3>Photo 1</h3>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/photo2.jpg" alt="Image 2">
+         
+          </div>
+          <div class="flip-card-back">
+            <h3>Photo 2</h3>
+            
+           
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/photo11.jpg" alt="Image 3">
+          
+          </div>
+          <div class="flip-card-back">
+            <h3>Photo 3</h3>
+           
+           
+          </div>
+        </div>
+      </div>
+  
+      
+  
+
+    </div>
+  </section>
+  <header>
+    <h1 class="videography-title">Videography</h1>
+    <p class="videography-section">Editing</p>
+
+    <section class="videography-section">
+      <div class="videography-grid">
+        <!-- Video 1 -->
+        <div class="video-container">
+          <video controls class="project-video">
+            <source src="video/HTML-podcastt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    
+        <!-- Video 2 -->
+        <div class="video-container">
+          <video controls class="project-video">
+            <source src="video/HTML-video14.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+    
+        <!-- Video 3 -->
+        <div class="video-container">
+          <video controls class="project-video">
+            <source src="video/HTML-review.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+    
+</main>
+</body>
+</html>
